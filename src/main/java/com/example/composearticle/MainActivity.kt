@@ -25,7 +25,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeArticleTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -39,9 +38,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ComposeArticle() {
-    val titulo = stringResource(R.string.text_tittle)
-    val descricao = stringResource(R.string.text_shortDescription)
-    val descricaoCompleta = stringResource(R.string.text_longDescription)
+    val titulo = stringResource(R.string.texto_titulo)
+    val descricao = stringResource(R.string.texto_descricao)
+    val descricaoCompleta = stringResource(R.string.texto_descricaoCompleta)
     val imagem = painterResource(R.drawable.bg_compose_background)
 
     Column {
